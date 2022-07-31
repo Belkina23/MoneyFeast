@@ -1,0 +1,268 @@
+/* Основные цвета проекта
+подложки, иконки - #FCC344
+подложки, иконки2 - #F7F7F7
+заголовки, текст - #000000 
+фон сайта, белый цвет - #FFFFFF
+второстепенный цвет - #717171
+элементы интерфейса  - #0FAD1F
+ссылки в футере - #8D8D8D
+*/
+
+@font-face {
+  font-family: "Aeroport";
+  src: url(../fonts/Aeroport.woff);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeroport-Bold";
+  src: url(../fonts/Aeroport-Bold.woff);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@import "node_modules/modern-normalize/modern-normalize.css";
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --akcent-color: #fcc344;
+  --icon-color: #f7f7f7;
+  --vtoroi-color: #717171;
+  --interface-color: #0fad1f;
+  --footer-link-color: #8d8d8d;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--white-color);
+  font-family: "Aeroport", "Aeroport-Bold", "sans-serif";
+  font-weight: 400;
+}
+
+.conteiner {
+  max-width: 1170px;
+  margin: 140px auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin: 0;
+}
+
+/* header */
+
+.header {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+  margin-left: 257px;
+}
+
+.nav-menu > .item:hover,
+.nav-menu > .item:focus {
+  color: var(--akcent-color);
+}
+
+.nav-link {
+  padding: 25px 0;
+}
+
+.header-bottom {
+  padding: 14px 27px 15px;
+  gap: 10px;
+  width: 168px;
+  height: 48px;
+  background: var(--akcent-color);
+  color: var(--black-color);
+  border-radius: 16px;
+  border: 0;
+  margin-left: auto;
+  font-family: "Aeroport";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.header-bottom:hover,
+.header-bottom:focus {
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+/* HERO */
+
+.container.hero {
+  width: 1170px;
+  height: 568px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--icon-color);
+  border-radius: 48px;
+}
+
+/* Достижения */
+
+.dignity-list {
+  display: flex;
+  gap: 30px;
+}
+
+.dignity-list .item {
+  width: 270px;
+}
+
+.item-p {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 38px;
+}
+
+.item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--vtoroi-color);
+}
+
+/* Курсы */
+
+.curse-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.08;
+  margin-bottom: 42px;
+}
+
+.curse-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.curse-list > .item {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  padding: 40px 30px 30px 40px;
+  width: 570px;
+  height: 351px;
+  background: #f7f7f7;
+  border-radius: 32px;
+  left: calc(50% - 570px / 2 - 314px);
+  top: calc(50% - 351px / 2 - 3035.5px);
+}
+
+.curse-list > .item:nth-child(4) {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  border: 2px solid #f7f7f7;
+  background-color: var(--white-color);
+}
+
+.pre-title-curse {
+  display: inline-block;
+  padding: 4px 14px;
+  max-width: 164px;
+  background: var(--akcent-color);
+  margin-bottom: 10px;
+}
+
+.title-curse {
+  width: 360px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  margin-bottom: 12px;
+}
+
+.text-curse {
+  width: 310px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--vtoroi-color);
+  margin-bottom: 43px;
+}
+
+.curse-img {
+  position: absolute;
+  right: 30px;
+  top: 106px;
+}
+
+.link-curse {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+}
+.right-icon {
+  content: '';
+  width: 21px;
+  height: 21px;
+  fill: var(--black-color);
+}
