@@ -73,6 +73,15 @@ h5,
 h6 {
   margin: 0;
 }
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  color: var(--black-color);
+  margin-bottom: 42px;
+}
+
 img {
   display: block;
 }
@@ -261,3 +270,101 @@ a {
   line-height: 34px;
 }
 
+/* Как проходит обучение */
+
+.video-img {
+  margin-bottom: 42px;
+}
+
+.learning-list {
+  display: flex;
+  gap: 30px;
+}
+
+.learning-list .item {
+  width: 270px;
+}
+
+.nomber {
+  display: block;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  color: var(--akcent-color);
+  padding-bottom: 16px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid var(--black-color);
+}
+
+.learning-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.14;
+  margin-bottom: 12px;
+}
+
+.learning-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--vtoroi-color);
+}
+
+/* Эксперты школы */
+
+.experts-list {
+  display: flex;
+  gap: 30px;
+}
+
+.img-expert {
+  margin-bottom: 19px;
+}
+
+.name-expert {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--black-color);
+  margin-bottom: 12px;
+}
+
+.expwrt-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--vtoroi-color);
+  margin-right: 10px;
+}
+
+/* Ученики */
+
+.title-span {
+  color: var(--vtoroi-color);
+}
+
+.pupils-list {
+  display: flex;
+  gap: 30px;
+}
+
+.pupils-list .item {
+  height: 532px;
+  background: var(--icon-color);
+  border-radius: 24px;
+}
+
+.pupils-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--black-color);
+  margin: 16px 30px 12px;
+}
+
+.pupils-text {
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--vtoroi-color);
+  margin: 0 30px;
+}
