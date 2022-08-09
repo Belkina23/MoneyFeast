@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="image/x-icon" rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>MoneyFeast</title>
   </head>
@@ -30,21 +32,60 @@
     <!-- MAIN -->
     <main>
       <section class="hero-section">
-        <div class="slider-hero">
+        <div class="slider-hero single-item">
 
-          <div class="container hero">
+          <div class="slider">
             <div>
               <h1 class="slider-title">Учим зарабатывать<br> 
               на криптовалюте<br>
               с нуля</h1>
               <p class="slider-text">Онлайн-школа<br> 
                 и профессиональное сообщество</p>
-                <button type="button" class="header-bottom">Выбрать курс</button></div>
+                <button type="button" class="header-bottom">Выбрать курс</button>
+              </div>
                 <img class="slider-img" src="./img/Mask-Group.png" alt="">
           </div>
 
+          <div class="slider curses">
+            <div>
+              <span class="online-curse">ОНЛАЙН-КУРС</span>
+              <h1 class="slider-title">Криптоинвестиции:<br>
+                успешный старт</h1>
+                <p class="slider-text">Научим зарабатывать на криптовалюте с нуля.<br> 
+                  Расскажем как заработать <b>500% за 6 месяцев</b>.</p>
+                  <button class="darck-button" type="button">Записаться на курс</button>
+            </div>
+            <img class="curses-img" src="./img/Star2.png" width="658px" height="658px" alt="">
+            <img class="img-curses" src="./img/Rocket.png" width="575px" height="575px" alt="">
+          </div>
 
-          
+          <div class="slider curses">
+            <div>
+              <span class="online-curse">ОНЛАЙН-КУРС</span>
+              <h1 class="slider-title">Мастерская трейдинга:<br>
+               практика и заработок</h1>
+               <p class="slider-text">Углубленное изучение криптотрейдинга.<br>
+                Увеличьте прибыль в несколько раз с помощью<br>
+                профессиональных инструментов и готовых стратегий.</p>
+                <button class="darck-button" type="button">Записаться на курс</button>
+            </div>
+            <img class="curs-img" src="./img/Star2.png" width="658px" height="658px" alt="">
+            <img class="img-curs" src="./img/Mining.png" width="365px" height="365px" alt="">
+          </div>
+
+          <div class="slider expert">
+            <div>
+              <span class="online-expert">ОНЛАЙН-КУРС</span>
+              <h1 class="expert-title">Индивидуальное сопро-<br>
+                вождение эксперта</h1>
+                <p class="expert-text">Премиальный пакет услуг: научим зарабатывать<br>
+                  максимум на трейдинге за короткое время.</p>
+                  <button class="expert-button" type="button">Записаться на курс</button>
+            </div>
+            <img class="expert-img" src="./img/Secured.png" width="425px" height="425px" alt="">
+          </div>
+
+
         </div>
       </section>
 
@@ -249,5 +290,10 @@
 
     <!-- FOOTER -->
     <footer></footer>
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

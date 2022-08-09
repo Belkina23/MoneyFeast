@@ -162,7 +162,61 @@ a {
 
 /* HERO */
 
-.container.hero {
+.slick-slider {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slick-prev, .slick-next {
+  width: 48px;
+  height: 48px;
+  background-color: #F7F7F7;
+  border-radius: 50%;
+}
+
+.slick-prev {
+  left: -60px;
+  background-image: url(../img/chevron-bottom1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-prev::before {
+  content: '';
+}
+
+.slick-next {
+  right: -60px;
+  background-image: url(../img/chevron-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-next::before {
+  content: '';
+}
+
+.slick-prev:hover, 
+.slick-prev:focus {
+  color: transparent;
+  outline: none;
+  background: #F7F7F7;
+  background-image: url(../img/chevron-bottom1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-next:hover, 
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: #F7F7F7;
+  background-image: url(../img/chevron-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider {
   position: relative;
   display: flex;
   width: 1170px;
@@ -194,6 +248,120 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.slider.curses {
+  background-color: var(--akcent-color);
+  overflow: hidden;
+}
+
+.curses-img {
+  position: absolute;
+  bottom: -16px;
+  right: 24px;
+}
+
+.img-curses {
+  position: absolute;
+  top: 35px;
+  right: 100px;
+}
+
+.img-curs {
+  position: absolute;
+  top: 120px;
+  right: 130px;
+}
+
+.curs-img {
+  position: absolute;
+  bottom: -110px;
+  right: 20px;
+}
+
+.online-curse {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--black-color);
+  margin-bottom: 8px;
+}
+
+.slider.expert {
+  background-color: #131313;
+}
+
+.online-expert {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--white-color);
+  margin-bottom: 8px;
+}
+
+.expert-title {
+  font-weight: 700;
+font-size: 44px;
+line-height: 1.14;
+color: var(--white-color);
+margin-bottom: 24px;
+}
+
+.expert-text {
+  font-weight: 400;
+font-size: 22px;
+line-height: 1.36;
+color: var(--white-color);
+margin-bottom: 58px;
+}
+
+.expert-img {
+  position: absolute;
+  top: 75px;
+  right: 85px;
+}
+
+.darck-button {
+  padding: 17px 39px;
+  gap: 10px;
+  width: 232px;
+  height: 56px;
+  background: var(--black-color);
+  color: var(--white-color);
+  border-radius: 16px;
+  border: 0;
+  margin-left: auto;
+  font-family: "Aeroport";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.darck-button:hover,
+.darck-button:focus {
+  background: var(--white-color);
+  color: var(--black-color);
+  border: 2px solid var(--black-color);
+}
+
+.expert-button {
+  width: 232px;
+height: 56px;
+background: var(--akcent-color);
+border: 0;
+border-radius: 16px;
+font-family: 'Aeroport';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.37;
+color: var(--black-color);
+}
+
+.expert-button:hover,
+.expert-button:focus {
+  background-color: var(--white-color);
 }
 
 /* Достижения */
