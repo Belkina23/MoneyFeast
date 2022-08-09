@@ -163,12 +163,37 @@ a {
 /* HERO */
 
 .container.hero {
+  position: relative;
+  display: flex;
   width: 1170px;
   height: 568px;
+  padding: 110px 70px;
   margin-left: auto;
   margin-right: auto;
   background: var(--icon-color);
   border-radius: 48px;
+}
+
+.slider-title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.14;
+  color: var(--black-color);
+  margin-bottom: 24px;
+}
+
+.slider-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.36;
+  color: var(--black-color);
+  margin-bottom: 58px;
+}
+
+.slider-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Достижения */
